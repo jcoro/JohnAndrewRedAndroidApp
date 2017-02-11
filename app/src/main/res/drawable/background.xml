@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#000000" />
+        </shape>
+    </item>
+
+    <item android:top="120dp">
+        <bitmap
+            android:src="@drawable/signaturewhite"
+            android:gravity="top|center_horizontal" />
+    </item>
+
+</layer-list>

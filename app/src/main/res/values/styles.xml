@@ -1,0 +1,77 @@
+<resources>
+<!--
+Firebase UI Styles here:
+https://github.com/firebase/FirebaseUI-Android/blob/master/auth/src/main/res/values/styles.xml
+-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorTertiary">@color/colorWhite</item>
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:editTextBackground">@drawable/border</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.EmailButton">
+        <item name="android:drawableLeft">@drawable/ic_mail_white_24dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/idp_button_background_email</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FirebaseUI.Button.AccountChooser.GoogleButton">
+        <item name="android:drawableLeft">@drawable/ic_googleg_color_24dp</item>
+        <item name="android:background">@drawable/idp_button_background_google</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FirebaseUI.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">@drawable/idp_button_background_email</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FirebaseUI.Text.HintText" parent="FirebaseUI.Text.T12">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="FirebaseUI.Text.TextInputLayout">
+        <item name="android:textColorHint">#5a5a5a</item>
+    </style>
+
+
+
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
