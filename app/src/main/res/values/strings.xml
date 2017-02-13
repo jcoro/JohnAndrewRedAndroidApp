@@ -4,4 +4,10 @@
     <string name="sign_out">Sign Out</string>
     <string name="post_button_label">Post</string>
     <string name="name_hint">Display Name</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about">About</string>
+    <string name="album_image">Album Image</string>
+    <string name="john_andrew_red">John Andrew Red</string>
+    <string name="meet_the_band">Meet The Band</string>
+    <string name="website">www.JohnAndrewRed.com</string>
 </resources>

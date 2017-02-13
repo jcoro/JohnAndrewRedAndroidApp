@@ -7,20 +7,17 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -42,11 +39,8 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -57,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int RC_SIGN_IN = 1;
     static final int REQUEST_IMAGE_CAPTURE = 2;
-    public static final int DEFAULT_MSG_LENGTH_LIMIT = 1000;
+    public static final int DEFAULT_MSG_LENGTH_LIMIT = 150;
 
     private String mCurrentPhotoPath;
     private ListView mMessageListView;
@@ -267,6 +261,8 @@ public class MainActivity extends AppCompatActivity {
             case net.coronite.johnandrewred.R.id.sign_out_menu:
                 AuthUI.getInstance().signOut(this);
                 return true;
+            case R.id.about_menu:
+                startActivity(new Intent(this, AboutActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }

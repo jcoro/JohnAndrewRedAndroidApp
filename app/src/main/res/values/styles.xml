@@ -1,36 +1,53 @@
-<resources>
-<!--
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
 Firebase UI Styles here:
 https://github.com/firebase/FirebaseUI-Android/blob/master/auth/src/main/res/values/styles.xml
 -->
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorSwitchThumbNormal">@color/colorWhite</item>
+
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>
+
+        <item name="android:textColorPrimaryInverse">@color/colorWhite</item>
+
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+
+        <item name="android:textColorSecondaryInverse">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
         <item name="android:textColorTertiary">@color/colorWhite</item>
         <item name="android:colorBackground">@color/colorPrimaryDark</item>
+        <item name="android:colorForeground">@color/colorWhite</item>
+        <item name="android:editTextBackground">@drawable/border</item>
 
+        <item name="android:buttonStyle">@style/flatButtonStyle</item>
+
+    </style>
+
+    <!-- Overrides Widget.AppCompat.Button -->
+    <style name="flatButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/color</item> <!-- The xml file -->
+        <item name="colorControlHighlight">@color/colorPrimary</item>
     </style>
 
     <!-- ToolBar -->
-    <style name="ToolBarStyle" parent="Theme.AppCompat">
-        <item name="android:textColorPrimary">@color/colorWhite</item>
-        <item name="android:textColorSecondary">@color/colorWhite</item>
-        <item name="actionMenuTextColor">@color/colorWhite</item>
+    <style name="ToolBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/colorAccent</item>
     </style>
 
     <style name="FullscreenTheme" parent="AppTheme">
-        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/colorPrimaryDark</item>
-        <item name="android:textColorPrimary">@color/colorAccent</item>
-        <item name="android:editTextBackground">@drawable/border</item>
     </style>
 
     <style name="FirebaseUI.Button.AccountChooser.EmailButton">
@@ -62,16 +79,5 @@ https://github.com/firebase/FirebaseUI-Android/blob/master/auth/src/main/res/val
         <item name="android:textColorHint">#5a5a5a</item>
     </style>
 
-
-
-
-    <style name="AppTheme.NoActionBar" parent="AppTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
