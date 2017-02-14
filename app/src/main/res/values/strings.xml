@@ -10,4 +10,14 @@
     <string name="john_andrew_red">John Andrew Red</string>
     <string name="meet_the_band">Meet The Band</string>
     <string name="website">www.JohnAndrewRed.com</string>
+    <string name="juan_rojo">Juan Rojo</string>
+    <string name="member_name">Member Name</string>
+    <string name="band_mem_img">Band Member Image</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</string>
+    <string name="fb_icon_desc">Facebook Icon</string>
+    <string name="twitter_icon_desc">Twitter Icon</string>
+    <string name="youtube_icon_desc">Youtube Icon</string>
+    <string name="instagram_icon_desc">Instagram Icon</string>
+    <string name="mem_one_bio">Juan Rojo is the lead singer and songwriter for John Andrew Red</string>
+
 </resources>

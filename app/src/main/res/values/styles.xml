@@ -11,25 +11,20 @@ https://github.com/firebase/FirebaseUI-Android/blob/master/auth/src/main/res/val
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlNormal">@color/colorWhite</item>
         <item name="colorControlHighlight">@color/colorPrimary</item>
-        <item name="colorControlActivated">@color/colorAccent</item>
-        <item name="colorSwitchThumbNormal">@color/colorWhite</item>
-
         <item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>
         <item name="android:statusBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>
-
         <item name="android:textColorPrimaryInverse">@color/colorWhite</item>
-
         <item name="android:textColorPrimary">@color/colorAccent</item>
-
         <item name="android:textColorSecondaryInverse">@color/colorPrimaryDark</item>
         <item name="android:textColorSecondary">@color/colorPrimary</item>
         <item name="android:textColorTertiary">@color/colorWhite</item>
+
         <item name="android:colorBackground">@color/colorPrimaryDark</item>
         <item name="android:colorForeground">@color/colorWhite</item>
+
+        <item name="colorControlActivated">@color/colorAccent</item>
         <item name="android:editTextBackground">@drawable/border</item>
-
         <item name="android:buttonStyle">@style/flatButtonStyle</item>
-
     </style>
 
     <!-- Overrides Widget.AppCompat.Button -->
@@ -41,6 +36,15 @@ https://github.com/firebase/FirebaseUI-Android/blob/master/auth/src/main/res/val
     <!-- ToolBar -->
     <style name="ToolBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="actionMenuTextColor">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <!-- Popup Menu -->
+    <style name="PopupStyle" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/material_gray_800</item>
+        <item name="android:colorPressedHighlight">@color/colorPrimary</item>
+        <item name="android:textColorHighlight">@color/colorPrimary</item>
     </style>
 
     <style name="FullscreenTheme" parent="AppTheme">

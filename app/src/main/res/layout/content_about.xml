@@ -79,25 +79,29 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_margin="6dp"
-                                android:src="@drawable/facebook"/>
+                                android:src="@drawable/facebook"
+                                android:contentDescription="@string/fb_icon_desc"/>
 
                             <ImageView
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_margin="6dp"
-                                android:src="@drawable/twitter"/>
+                                android:src="@drawable/twitter"
+                                android:contentDescription="@string/twitter_icon_desc"/>
 
                             <ImageView
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_margin="6dp"
-                                android:src="@drawable/youtube"/>
+                                android:src="@drawable/youtube"
+                                android:contentDescription="@string/youtube_icon_desc"/>
 
                             <ImageView
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_margin="6dp"
-                                android:src="@drawable/instagram"/>
+                                android:src="@drawable/instagram"
+                                android:contentDescription="@string/instagram_icon_desc"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -113,7 +117,8 @@
                 android:id="@+id/member_1"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
-                android:layout_margin="12dp"/>
+                android:layout_margin="12dp"
+                android:contentDescription="@string/band_mem_img"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -128,7 +133,7 @@
                     android:textColor="@color/colorPrimary"
                     android:textColorLink="@color/colorAccent"
                     android:textSize="@dimen/detail_body_text_size"
-                    android:text="Member 1"
+                    android:text="@string/juan_rojo"
                     android:textStyle="normal|bold" />
                 <TextView
                     android:id="@+id/member_description1"
@@ -137,7 +142,7 @@
                     android:textColor="@color/colorWhite"
                     android:textColorLink="@color/colorAccent"
                     android:textSize="18sp"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu." />
+                    android:text="@string/mem_one_bio" />
 
             </LinearLayout>
         </LinearLayout>
@@ -153,7 +158,8 @@
                 android:id="@+id/member_2"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
-                android:layout_margin="12dp"/>
+                android:layout_margin="12dp"
+                android:contentDescription="@string/band_mem_img"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -168,7 +174,7 @@
                     android:textColor="@color/colorPrimary"
                     android:textColorLink="@color/colorAccent"
                     android:textSize="@dimen/detail_body_text_size"
-                    android:text="Member 2"/>
+                    android:text="@string/juan_rojo"/>
                 <TextView
                     android:id="@+id/member_description2"
                     android:layout_width="match_parent"
@@ -176,7 +182,7 @@
                     android:textColor="@color/colorWhite"
                     android:textColorLink="@color/colorAccent"
                     android:textSize="18sp"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu." />
+                    android:text="@string/mem_one_bio" />
 
             </LinearLayout>
         </LinearLayout>
@@ -192,7 +198,8 @@
                 android:id="@+id/member_3"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
-                android:layout_margin="12dp"/>
+                android:layout_margin="12dp"
+                android:contentDescription="@string/band_mem_img"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -207,7 +214,8 @@
                     android:textColor="@color/colorPrimary"
                     android:textColorLink="@color/colorAccent"
                     android:textSize="@dimen/detail_body_text_size"
-                    android:text="Member 3"/>
+                    android:text="@string/member_name"/>
+
                 <TextView
                     android:id="@+id/member_description3"
                     android:layout_width="match_parent"
@@ -215,7 +223,7 @@
                     android:textColor="@color/colorWhite"
                     android:textColorLink="@color/colorAccent"
                     android:textSize="18sp"
-                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu." />
+                    android:text="@string/lorem" />
 
             </LinearLayout>
         </LinearLayout>
